@@ -1,0 +1,175 @@
+﻿<!DOCTYPE html>
+<html lang="es" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Galería institucional del Politécnico Olga Modesta Martínez.">
+  <meta name="author" content="PanicOS - Soluciones Digitales">
+  <link rel="shortcut icon" href="images/Logo del Centro.png" type="image/x-icon">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Sora:wght@500;600;700;800&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <title>Galería | Politécnico Olga Modesta Martínez</title>
+</head>
+<body>
+  <canvas id="starfield" class="starfield" aria-hidden="true"></canvas>
+  <div class="radial-glow radial-glow--one" aria-hidden="true"></div>
+  <div class="radial-glow radial-glow--two" aria-hidden="true"></div>
+
+  <a href="#contenido" class="skip-link">Saltar al contenido principal</a>
+
+  <header class="site-header" id="siteHeader">
+    <nav class="container nav" aria-label="Navegación principal">
+      <a class="brand" href="index.html" aria-label="Ir al inicio del Politécnico Olga Modesta Martínez">
+        <img src="images/Logo del Centro.png" alt="Logo institucional del Politécnico Olga Modesta Martínez">
+        <span>
+          Politécnico Olga Modesta Martínez
+          <small>La visión del futuro</small>
+        </span>
+      </a>
+
+      <button class="menu-toggle" id="menuToggle" type="button" aria-expanded="false" aria-controls="navPanel" aria-label="Abrir menú de navegación">
+        <i class='bx bx-grid-alt'></i>
+      </button>
+
+      <div class="nav-panel" id="navPanel">
+        <a class="nav-link" href="index.html"><i class='bx bx-home-alt-2'></i>Inicio</a>
+        <a class="nav-link" href="Historia.html"><i class='bx bx-building-house'></i>Sobre</a>
+        <a class="nav-link" href="Carreras.html"><i class='bx bx-briefcase-alt-2'></i>Oferta</a>
+        <a class="nav-link" href="Eventos.html"><i class='bx bx-news'></i>Noticias</a>
+        <a class="nav-link" href="Galeria.html"><i class='bx bx-image-alt'></i>Galería</a>
+        <a class="nav-link" href="contacto.html"><i class='bx bx-phone-call'></i>Contacto</a>
+        <a class="nav-link" href="desarrolladores.html"><i class='bx bx-code-alt'></i>Devs</a>
+        <button class="theme-toggle" id="themeToggle" type="button" aria-label="Activar modo oscuro">
+          <i class='bx bx-moon'></i>
+        </button>
+      </div>
+    </nav>
+  </header>
+
+  <main id="contenido">
+    <section class="hero section">
+      <div class="container hero-grid">
+        <article class="hero-copy reveal">
+          <p class="eyebrow"><i class='bx bx-image-alt'></i> Galería institucional</p>
+          <h1>Imágenes que reflejan <span>nuestra esencia educativa.</span></h1>
+          <p>
+            Conoce espacios, eventos y momentos de la comunidad politécnica a través de una
+            galería visual dinámica y envolvente.
+          </p>
+          <div class="pill-row">
+            <span class="pill"><i class='bx bx-camera'></i> Experiencias</span>
+            <span class="pill"><i class='bx bx-building'></i> Infraestructura</span>
+            <span class="pill"><i class='bx bx-group'></i> Comunidad</span>
+          </div>
+        </article>
+
+        <aside class="hero-media reveal">
+          <img src="images/Dia de la mujer, baile.jpeg" alt="Vista general de instalaciones del politécnico" class="hero-photo">
+          <div class="hero-badge">
+            <i class='bx bx-photo-album'></i>
+            <div>
+              <strong>Memoria visual institucional</strong>
+              <span>Cada imagen cuenta una parte de nuestra historia.</span>
+            </div>
+          </div>
+        </aside>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <header class="section-head reveal">
+          <p class="section-kicker">Momentos destacados</p>
+          <h2>Vida escolar, cultura y formación en una sola mirada.</h2>
+        </header>
+
+        <div class="gallery-grid">
+          <figure class="gallery-item reveal" data-delay="0.02s">
+            <img src="images/photo-1606636660488-16a8646f0-h_lvo87hzw.jpg" alt="Estudiantes en formación en aula" loading="lazy">
+            <figcaption>Formación técnica con enfoque práctico</figcaption>
+          </figure>
+          <figure class="gallery-item reveal" data-delay="0.06s">
+            <img src="images/Independencia.jpg" alt="Actividades institucionales y eventos" loading="lazy">
+            <figcaption>Eventos académicos y culturales</figcaption>
+          </figure>
+          <figure class="gallery-item reveal" data-delay="0.1s">
+            <img src="images/Estatua de Olga.jpg" alt="Elemento histórico institucional" loading="lazy">
+            <figcaption>Historia e identidad institucional</figcaption>
+          </figure>
+          <figure class="gallery-item is-wide reveal" data-delay="0.14s">
+            <img src="images/Entrega de plaquitas.jpg" alt="Integrante de la comunidad educativa" loading="lazy">
+            <figcaption>Liderazgo y compromiso educativo</figcaption>
+          </figure>
+          <figure class="gallery-item reveal" data-delay="0.18s">
+            <img src="images/PArque turismo.jpeg" alt="Participación en actividades" loading="lazy">
+            <figcaption>Comunidad activa y colaborativa</figcaption>
+          </figure>
+          <figure class="gallery-item reveal" data-delay="0.22s">
+            <img src="images/Meritorio2.jpeg" alt="Trabajo en equipo de estudiantes" loading="lazy">
+            <figcaption>Mérito académico y profesional</figcaption>
+          </figure>
+          <figure class="gallery-item reveal" data-delay="0.26s">
+            <img src="images/Dia de la lectura.jpeg" alt="Equipo técnico del proyecto" loading="lazy">
+            <figcaption>Actividades recreativas y educativas</figcaption>
+          </figure>
+          <figure class="gallery-item reveal" data-delay="0.3s">
+            <img src="images/Show de talentos.jpeg" alt="Comunicación y proyección institucional" loading="lazy">
+            <figcaption>Dinamismo y creatividad</figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div>
+        <h3>Politécnico Olga Modesta Martínez</h3>
+        <p>Una galería viva que proyecta identidad, innovación y sentido de pertenencia.</p>
+      </div>
+
+      <div>
+        <h4>Pestañas</h4>
+        <a href="index.html">Inicio</a>
+        <a href="Historia.html">Sobre</a>
+        <a href="Carreras.html">Oferta académica</a>
+        <a href="Eventos.html">Noticias</a>
+      </div>
+
+      <div>
+        <h4>Institucional</h4>
+        <a href="contacto.html">Contacto</a>
+        <a href="desarrolladores.html">Desarrolladores</a>
+        <a href="Politica de privacidad.html">Política de privacidad</a>
+        <a href="Politica de cookies.html">Política de cookies</a>
+        <a href="Terminos de seguridad.html">Términos de seguridad</a>
+      </div>
+
+      <div>
+        <h4>Redes</h4>
+        <div class="social-links">
+          <a href="#" aria-label="Facebook"><i class='bx bxl-facebook-circle'></i></a>
+           <a href="https://www.instagram.com/politecnicoolgamodesta?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" aria-label="Instagram"><i class='bx bxl-instagram-alt'></i></a>
+        </div>
+      </div>
+    </div>
+
+    <div class="container footer-bottom">
+      <p>© <span data-current-year></span> Politécnico Olga Modesta Martínez. Todos los derechos reservados.</p>
+      <p>Diseño premium por PanicOS.</p>
+    </div>
+  </footer>
+
+  <a href="#contenido" class="scroll-top" id="scrollTop" aria-label="Volver arriba">
+    <i class='bx bx-chevron-up'></i>
+  </a>
+
+  <script src="main.js" defer></script>
+</body>
+</html>
+
+

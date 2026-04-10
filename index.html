@@ -1,0 +1,198 @@
+﻿<!DOCTYPE html>
+<html lang="es" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Portal oficial del Politécnico Olga Modesta Martínez. Educación técnico profesional de alto nivel con innovación y visión de futuro.">
+  <meta name="author" content="PanicOS - Soluciones Digitales">
+  <link rel="shortcut icon" href="images/Logo del Centro.png" type="image/x-icon">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Sora:wght@500;600;700;800&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <title>Inicio | Politécnico Olga Modesta Martínez</title>
+</head>
+<body>
+  <canvas id="starfield" class="starfield" aria-hidden="true"></canvas>
+  <div class="radial-glow radial-glow--one" aria-hidden="true"></div>
+  <div class="radial-glow radial-glow--two" aria-hidden="true"></div>
+
+  <a href="#contenido" class="skip-link">Saltar al contenido principal</a>
+
+  <header class="site-header" id="siteHeader">
+    <nav class="container nav" aria-label="Navegación principal">
+      <a class="brand" href="index.html" aria-label="Ir al inicio del Politécnico Olga Modesta Martínez">
+        <img src="images/Logo del Centro.png" alt="Logo institucional del Politécnico Olga Modesta Martínez">
+        <span>
+          Politécnico Olga Modesta Martínez
+          <small>La visión del futuro</small>
+        </span>
+      </a>
+
+      <button class="menu-toggle" id="menuToggle" type="button" aria-expanded="false" aria-controls="navPanel" aria-label="Abrir menú de navegación">
+        <i class='bx bx-grid-alt'></i>
+      </button>
+
+      <div class="nav-panel" id="navPanel">
+        <a class="nav-link" href="index.html"><i class='bx bx-home-alt-2'></i>Inicio</a>
+        <a class="nav-link" href="Historia.html"><i class='bx bx-building-house'></i>Sobre</a>
+        <a class="nav-link" href="Carreras.html"><i class='bx bx-briefcase-alt-2'></i>Oferta</a>
+        <a class="nav-link" href="Eventos.html"><i class='bx bx-news'></i>Noticias</a>
+        <a class="nav-link" href="Galeria.html"><i class='bx bx-image-alt'></i>Galería</a>
+        <a class="nav-link" href="contacto.html"><i class='bx bx-phone-call'></i>Contacto</a>
+        <a class="nav-link" href="desarrolladores.html"><i class='bx bx-code-alt'></i>Devs</a>
+        <button class="theme-toggle" id="themeToggle" type="button" aria-label="Activar modo oscuro">
+          <i class='bx bx-moon'></i>
+        </button>
+      </div>
+    </nav>
+  </header>
+
+  <main id="contenido">
+    <section class="hero section">
+      <div class="container hero-grid">
+        <article class="hero-copy reveal">
+          <p class="eyebrow"><i class='bx bx-radio-circle-marked'></i> Formación técnica de nueva generación</p>
+          <h1>Educamos para un mundo <span>tecnológico, humano y competitivo.</span></h1>
+          <p>
+            Bienvenido al Politécnico Olga Modesta Martínez. Integramos práctica, innovación,
+            disciplina y valores para construir trayectorias con verdadera empleabilidad.
+          </p>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="Carreras.html">Ver oferta académica <i class='bx bx-right-arrow-alt'></i></a>
+            <a class="btn btn-ghost" href="contacto.html">Solicitar admisión</a>
+          </div>
+
+          <div class="hero-metrics">
+            <div class="metric-card">
+              <strong>+400</strong>
+              <span>Estudiantes en formación</span>
+            </div>
+            <div class="metric-card">
+              <strong>5</strong>
+              <span>Áreas técnicas estratégicas</span>
+            </div>
+            <div class="metric-card">
+              <strong>1</strong>
+              <span>Visión institucional clara</span>
+            </div>
+          </div>
+        </article>
+
+        <aside class="hero-media reveal">
+          <div class="hero-ring parallax" data-parallax="0.08" aria-hidden="true"></div>
+          <div class="hero-ring hero-ring--small parallax" data-parallax="-0.06" aria-hidden="true"></div>
+          <img src="images/photo-1606636660488-16a8646f0-h_lvo87hzw.jpg" alt="Comunidad educativa del Politécnico Olga Modesta Martínez" class="hero-photo">
+          <div class="hero-badge parallax" data-parallax="0.05">
+            <i class='bx bx-badge-check'></i>
+            <div>
+              <strong>Experiencia premium, identidad institucional</strong>
+              <span>Un ecosistema académico diseñado para destacar.</span>
+            </div>
+          </div>
+        </aside>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <header class="section-head reveal">
+          <p class="section-kicker">Nuestra propuesta</p>
+          <h2>Aprendizaje aplicado, cultura de excelencia y liderazgo juvenil.</h2>
+          <p>
+            Este portal está dividido por pestañas individuales para que explores cada área del
+            politécnico con claridad, fluidez y una experiencia visual moderna.
+          </p>
+        </header>
+
+        <div class="stat-strip">
+          <article class="stat-chip reveal" data-delay="0.03s">
+            <strong>Innovación</strong>
+            <span>Laboratorios, proyectos y metodologías activas.</span>
+          </article>
+          <article class="stat-chip reveal" data-delay="0.08s">
+            <strong>Formación integral</strong>
+            <span>Competencias técnicas, humanas y ciudadanas.</span>
+          </article>
+          <article class="stat-chip reveal" data-delay="0.13s">
+            <strong>Proyección real</strong>
+            <span>Conexión con empleo, emprendimiento y continuidad académica.</span>
+          </article>
+        </div>
+
+        <div class="card-grid triple">
+          <article class="surface-card reveal" data-delay="0.04s">
+            <i class='bx bx-building-house card-icon'></i>
+            <h3>Sobre la institución</h3>
+            <p>Historia, identidad, misión y visión de una comunidad con propósito.</p>
+            <a class="card-link" href="Historia.html">Ir a Sobre <i class='bx bx-right-arrow-alt'></i></a>
+          </article>
+
+          <article class="surface-card reveal" data-delay="0.1s">
+            <i class='bx bx-briefcase-alt-2 card-icon'></i>
+            <h3>Oferta académica</h3>
+            <p>Programas técnicos orientados a sectores con alta demanda laboral.</p>
+            <a class="card-link" href="Carreras.html">Ver programas <i class='bx bx-right-arrow-alt'></i></a>
+          </article>
+
+          <article class="surface-card reveal" data-delay="0.16s">
+            <i class='bx bx-calendar-star card-icon'></i>
+            <h3>Noticias y agenda</h3>
+            <p>Actividades institucionales, eventos y dinámicas de la vida escolar.</p>
+            <a class="card-link" href="Eventos.html">Entrar a noticias <i class='bx bx-right-arrow-alt'></i></a>
+          </article>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div>
+        <h3>Politécnico Olga Modesta Martínez</h3>
+        <p>Educación técnico profesional con visión contemporánea, impacto social y enfoque en resultados.</p>
+      </div>
+
+      <div>
+        <h4>Pestañas</h4>
+        <a href="Historia.html">Sobre</a>
+        <a href="Carreras.html">Oferta académica</a>
+        <a href="Eventos.html">Noticias</a>
+        <a href="Galeria.html">Galería</a>
+      </div>
+
+      <div>
+        <h4>Institucional</h4>
+        <a href="contacto.html">Contacto</a>
+        <a href="desarrolladores.html">Desarrolladores</a>
+        <a href="Politica de privacidad.html">Política de privacidad</a>
+        <a href="Politica de cookies.html">Política de cookies</a>
+        <a href="Terminos de seguridad.html">Términos de seguridad</a>
+      </div>
+
+      <div>
+        <h4>Redes</h4>
+        <div class="social-links">
+          <a href="#" aria-label="Facebook"><i class='bx bxl-facebook-circle'></i></a>
+           <a href="https://www.instagram.com/politecnicoolgamodesta?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" aria-label="Instagram"><i class='bx bxl-instagram-alt'></i></a>
+        </div>
+      </div>
+    </div>
+
+    <div class="container footer-bottom">
+      <p>© <span data-current-year></span> Politécnico Olga Modesta Martínez. Todos los derechos reservados.</p>
+      <p>Diseño premium por PanicOS.</p>
+    </div>
+  </footer>
+
+  <a href="#contenido" class="scroll-top" id="scrollTop" aria-label="Volver arriba">
+    <i class='bx bx-chevron-up'></i>
+  </a>
+
+  <script src="main.js" defer></script>
+</body>
+</html>
+
+

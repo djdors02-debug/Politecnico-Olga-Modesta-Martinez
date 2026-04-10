@@ -1,0 +1,176 @@
+﻿<!DOCTYPE html>
+<html lang="es" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Equipo de desarrolladores y diseño digital del portal del Politécnico Olga Modesta Martínez.">
+  <meta name="author" content="PanicOS - Soluciones Digitales">
+  <link rel="shortcut icon" href="images/Logo del Centro.png" type="image/x-icon">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Sora:wght@500;600;700;800&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <title>Desarrolladores | Politécnico Olga Modesta Martínez</title>
+</head>
+<body>
+  <canvas id="starfield" class="starfield" aria-hidden="true"></canvas>
+  <div class="radial-glow radial-glow--one" aria-hidden="true"></div>
+  <div class="radial-glow radial-glow--two" aria-hidden="true"></div>
+
+  <a href="#contenido" class="skip-link">Saltar al contenido principal</a>
+
+  <header class="site-header" id="siteHeader">
+    <nav class="container nav" aria-label="Navegación principal">
+      <a class="brand" href="index.html" aria-label="Ir al inicio del Politécnico Olga Modesta Martínez">
+        <img src="images/Logo del Centro.png" alt="Logo institucional del Politécnico Olga Modesta Martínez">
+        <span>
+          Politécnico Olga Modesta Martínez
+          <small>La visión del futuro</small>
+        </span>
+      </a>
+
+      <button class="menu-toggle" id="menuToggle" type="button" aria-expanded="false" aria-controls="navPanel" aria-label="Abrir menú de navegación">
+        <i class='bx bx-grid-alt'></i>
+      </button>
+
+      <div class="nav-panel" id="navPanel">
+        <a class="nav-link" href="index.html"><i class='bx bx-home-alt-2'></i>Inicio</a>
+        <a class="nav-link" href="Historia.html"><i class='bx bx-building-house'></i>Sobre</a>
+        <a class="nav-link" href="Carreras.html"><i class='bx bx-briefcase-alt-2'></i>Oferta</a>
+        <a class="nav-link" href="Eventos.html"><i class='bx bx-news'></i>Noticias</a>
+        <a class="nav-link" href="Galeria.html"><i class='bx bx-image-alt'></i>Galería</a>
+        <a class="nav-link" href="contacto.html"><i class='bx bx-phone-call'></i>Contacto</a>
+        <a class="nav-link" href="desarrolladores.html"><i class='bx bx-code-alt'></i>Devs</a>
+        <button class="theme-toggle" id="themeToggle" type="button" aria-label="Activar modo oscuro">
+          <i class='bx bx-moon'></i>
+        </button>
+      </div>
+    </nav>
+  </header>
+
+  <main id="contenido">
+    <section class="hero section">
+      <div class="container hero-grid">
+        <article class="hero-copy reveal">
+          <p class="eyebrow"><i class='bx bx-code-block'></i> Pestaña de desarrolladores</p>
+          <h1>Diseño y tecnología con <span>mentalidad de alto rendimiento.</span></h1>
+          <p>
+            Esta experiencia digital fue creada por PanicOS para proyectar una identidad institucional
+            moderna, elegante y poderosa. Aquí reconocemos al equipo detrás del desarrollo.
+          </p>
+          <div class="pill-row">
+            <span class="pill"><i class='bx bx-palette'></i> UI/UX premium</span>
+            <span class="pill"><i class='bx bx-code-alt'></i> Código limpio</span>
+            <span class="pill"><i class='bx bx-rocket'></i> Experiencia fluida</span>
+          </div>
+        </article>
+
+        <aside class="hero-media reveal">
+          <img src="images/Logo final PanicOS.jpeg" alt="Identidad visual del equipo PanicOS" class="hero-photo">
+          <div class="hero-badge">
+            <i class='bx bx-cube'></i>
+            <div>
+              <strong>PanicOS Creative Tech</strong>
+              <span>Estrategia digital, diseño y desarrollo web institucional.</span>
+            </div>
+          </div>
+        </aside>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <header class="section-head reveal">
+          <p class="section-kicker">Equipo</p>
+          <h2>Talento multidisciplinario detrás de este rediseño.</h2>
+        </header>
+
+        <div class="profile-grid">
+          <article class="surface-card profile-card reveal" data-delay="0.02s">
+            <img class="profile-avatar" src="images/Doris.jpeg" alt="Doris Alba Cueto Lagombra" loading="lazy">
+            <span class="profile-role"><i class='bx bx-crown'></i> Dirección general</span>
+            <h3>Doris Alba Cueto Lagombra</h3>
+            <p>Liderazgo estratégico y coordinación integral del proyecto digital institucional.</p>
+          </article>
+
+          <article class="surface-card profile-card reveal" data-delay="0.08s">
+            <img class="profile-avatar" src="images/Cenatus y Eliezer.jpeg" alt="Roubensky Cenatus y Eliezer Reyes" loading="lazy">
+            <span class="profile-role"><i class='bx bx-chip'></i> Departamento técnico</span>
+            <h3>Roubensky Cenatus y Eliezer Reyes</h3>
+            <p>Arquitectura técnica, soporte operativo y estructura de implementación.</p>
+          </article>
+
+          <article class="surface-card profile-card reveal" data-delay="0.14s">
+            <img class="profile-avatar" src="images/Oscar y Anthony.jpeg" alt="Oscar Peralta y Anthony Jiménez" loading="lazy">
+            <span class="profile-role"><i class='bx bx-palette'></i> Diseño y desarrollo</span>
+            <h3>Oscar Peralta y Anthony Jiménez</h3>
+            <p>Concepto visual, experiencia de usuario y front-end del sitio.</p>
+          </article>
+
+          <article class="surface-card profile-card reveal" data-delay="0.2s">
+            <img class="profile-avatar" src="images/Railin.jpeg" alt="Railin Batista" loading="lazy">
+            <span class="profile-role"><i class='bx bx-line-chart'></i> Comercial y finanzas</span>
+            <h3>Railin Batista</h3>
+            <p>Enfoque de negocio, planificación y sostenibilidad del proyecto.</p>
+          </article>
+
+          <article class="surface-card profile-card reveal" data-delay="0.26s">
+            <img class="profile-avatar" src="images/Yandel.jpeg" alt="Yandel Gómez" loading="lazy">
+            <span class="profile-role"><i class='bx bx-dollar-circle'></i> Marketing</span>
+            <h3>Yandel Gómez</h3>
+            <p>Comunicación digital, posicionamiento y proyección de marca.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div>
+        <h3>Politécnico Olga Modesta Martínez</h3>
+        <p>Tecnología, diseño e innovación al servicio de una institución educativa de excelencia.</p>
+      </div>
+
+      <div>
+        <h4>Pestañas</h4>
+        <a href="index.html">Inicio</a>
+        <a href="Historia.html">Sobre</a>
+        <a href="Carreras.html">Oferta académica</a>
+        <a href="Eventos.html">Noticias</a>
+      </div>
+
+      <div>
+        <h4>Institucional</h4>
+        <a href="Galeria.html">Galería</a>
+        <a href="contacto.html">Contacto</a>
+        <a href="Politica de privacidad.html">Política de privacidad</a>
+        <a href="Politica de cookies.html">Política de cookies</a>
+        <a href="Terminos de seguridad.html">Términos de seguridad</a>
+      </div>
+
+      <div>
+        <h4>Redes</h4>
+        <div class="social-links">
+          <a href="https://www.instagram.com/panicos.1?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" aria-label="Instagram"><i class='bx bxl-instagram-alt'></i></a>
+        </div>
+      </div>
+    </div>
+
+    <div class="container footer-bottom">
+      <p>© <span data-current-year></span> Politécnico Olga Modesta Martínez. Todos los derechos reservados.</p>
+      <p>Diseño premium por PanicOS.</p>
+    </div>
+  </footer>
+
+  <a href="#contenido" class="scroll-top" id="scrollTop" aria-label="Volver arriba">
+    <i class='bx bx-chevron-up'></i>
+  </a>
+
+  <script src="main.js" defer></script>
+</body>
+</html>
+
+

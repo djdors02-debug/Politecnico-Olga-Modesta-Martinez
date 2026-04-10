@@ -1,0 +1,77 @@
+﻿<!DOCTYPE html>
+<html lang="es" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Oferta académica en Tributaria del Politécnico Olga Modesta Martínez.">
+  <meta name="author" content="PanicOS - Soluciones Digitales">
+  <link rel="shortcut icon" href="images/Logo del Centro.png" type="image/x-icon">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Sora:wght@500;600;700;800&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <title>Tributaria | Politécnico Olga Modesta Martínez</title>
+</head>
+<body>
+  <canvas id="starfield" class="starfield" aria-hidden="true"></canvas>
+  <div class="radial-glow radial-glow--one" aria-hidden="true"></div>
+  <div class="radial-glow radial-glow--two" aria-hidden="true"></div>
+  <a href="#contenido" class="skip-link">Saltar al contenido principal</a>
+
+  <header class="site-header" id="siteHeader">
+    <nav class="container nav" aria-label="Navegación principal">
+      <a class="brand" href="index.html" aria-label="Ir al inicio del Politécnico Olga Modesta Martínez"><img src="images/Logo del Centro.png" alt="Logo institucional"><span>Politécnico OMM<small>Olga Modesta Martínez</small></span></a>
+      <button class="menu-toggle" id="menuToggle" type="button" aria-expanded="false" aria-controls="navPanel" aria-label="Abrir menú de navegación"><i class='bx bx-grid-alt'></i></button>
+      <div class="nav-panel" id="navPanel">
+        <a class="nav-link" href="index.html"><i class='bx bx-home-alt-2'></i>Inicio</a><a class="nav-link" href="Historia.html"><i class='bx bx-building-house'></i>Sobre</a><a class="nav-link" href="Carreras.html"><i class='bx bx-briefcase-alt-2'></i>Oferta</a><a class="nav-link" href="Eventos.html"><i class='bx bx-news'></i>Noticias</a><a class="nav-link" href="Galeria.html"><i class='bx bx-image-alt'></i>Galería</a><a class="nav-link" href="contacto.html"><i class='bx bx-phone-call'></i>Contacto</a><a class="nav-link" href="desarrolladores.html"><i class='bx bx-code-alt'></i>Devs</a><button class="theme-toggle" id="themeToggle" type="button" aria-label="Activar modo oscuro"><i class='bx bx-moon'></i></button>
+      </div>
+    </nav>
+  </header>
+
+  <main id="contenido">
+    <section class="hero section">
+      <div class="container hero-grid">
+        <article class="hero-copy reveal">
+          <p class="eyebrow"><i class='bx bx-line-chart'></i> Programa técnico</p>
+          <h1>Tributaria: gestión financiera <span>con precisión y estrategia.</span></h1>
+          <p>Forma competencias para administrar procesos contables y fiscales, interpretar normativas y apoyar decisiones empresariales responsables.</p>
+          <div class="pill-row"><span class="pill"><i class='bx bx-calculator'></i> Contabilidad</span><span class="pill"><i class='bx bx-file'></i> Fiscalidad</span><span class="pill"><i class='bx bx-buildings'></i> Gestión</span></div>
+        </article>
+        <aside class="hero-media reveal">
+          <img src="images/tribu.png" alt="Especialidad técnica en tributaria" class="hero-photo">
+          <div class="hero-badge"><i class='bx bx-check-shield'></i><div><strong>Rigor normativo y analítico</strong><span>Aprendizaje orientado al cumplimiento y la eficiencia.</span></div></div>
+        </aside>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container split-grid">
+        <article class="surface-card reveal"><i class='bx bx-book-content card-icon'></i><h3>Competencias clave</h3><p>Registros contables, cálculo tributario, facturación, reportes y control documental.</p></article>
+        <article class="surface-card reveal" data-delay="0.08s"><i class='bx bx-briefcase-alt card-icon'></i><h3>Salidas profesionales</h3><p>Asistente contable, auxiliar tributario, soporte administrativo y gestión financiera básica.</p></article>
+      </div>
+
+      <div class="timeline-grid">
+        <article class="surface-card timeline-card reveal" data-year="M1" data-delay="0.02s"><h3>Fundamentos contables</h3><p>Principios de contabilidad y ciclo básico de registros.</p></article>
+        <article class="surface-card timeline-card reveal" data-year="M2" data-delay="0.07s"><h3>Normativa tributaria</h3><p>Conceptos legales, obligaciones y calendario fiscal.</p></article>
+        <article class="surface-card timeline-card reveal" data-year="M3" data-delay="0.12s"><h3>Herramientas administrativas</h3><p>Uso de hojas de cálculo, reportes y control de procesos.</p></article>
+        <article class="surface-card timeline-card reveal" data-year="M4" data-delay="0.17s"><h3>Proyecto aplicado</h3><p>Resolución de caso de gestión tributaria en entorno realista.</p></article>
+      </div>
+
+      <div class="stat-strip">
+        <article class="stat-chip reveal" data-delay="0.05s"><strong>Alta utilidad empresarial</strong><span>Perfil esencial para pequeñas y medianas empresas.</span></article>
+        <article class="stat-chip reveal" data-delay="0.1s"><strong>Precisión técnica</strong><span>Procesos con enfoque en calidad documental y cumplimiento.</span></article>
+        <article class="stat-chip reveal" data-delay="0.15s"><strong>Base para estudios superiores</strong><span>Continuidad en contabilidad, administración y finanzas.</span></article>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer"><div class="container footer-grid"><div><h3>Politécnico Olga Modesta Martínez</h3><p>Educación técnico profesional de calidad con visión de innovación.</p></div><div><h4>Pestañas</h4><a href="index.html">Inicio</a><a href="Historia.html">Sobre</a><a href="Carreras.html">Oferta académica</a><a href="Eventos.html">Noticias</a></div><div><h4>Legal</h4><a href="Politica de privacidad.html">Política de privacidad</a><a href="Terminos de seguridad.html">Términos de seguridad</a><a href="Politica de cookies.html">Política de cookies</a></div><div><h4>Contacto</h4><a href="contacto.html">Atención institucional</a><a href="desarrolladores.html">Equipo desarrollador</a></div></div><div class="container footer-bottom"><p>© <span data-current-year></span> Politécnico Olga Modesta Martínez.</p><p>Diseño premium por PanicOS.</p></div></footer>
+
+  <a href="#contenido" class="scroll-top" id="scrollTop" aria-label="Volver arriba"><i class='bx bx-chevron-up'></i></a>
+  <script src="main.js" defer></script>
+</body>
+</html>
+
+

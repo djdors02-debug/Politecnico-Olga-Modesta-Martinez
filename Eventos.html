@@ -1,0 +1,233 @@
+﻿<!DOCTYPE html>
+<html lang="es" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Noticias, agenda y eventos institucionales del Politécnico Olga Modesta Martínez.">
+  <meta name="author" content="PanicOS - Soluciones Digitales">
+  <link rel="shortcut icon" href="images/Logo del Centro.png" type="image/x-icon">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Sora:wght@500;600;700;800&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <title>Noticias | Politécnico Olga Modesta Martínez</title>
+</head>
+<body>
+  <canvas id="starfield" class="starfield" aria-hidden="true"></canvas>
+  <div class="radial-glow radial-glow--one" aria-hidden="true"></div>
+  <div class="radial-glow radial-glow--two" aria-hidden="true"></div>
+
+  <a href="#contenido" class="skip-link">Saltar al contenido principal</a>
+
+  <header class="site-header" id="siteHeader">
+    <nav class="container nav" aria-label="Navegación principal">
+      <a class="brand" href="index.html" aria-label="Ir al inicio del Politécnico Olga Modesta Martínez">
+        <img src="images/Logo del Centro.png" alt="Logo institucional del Politécnico Olga Modesta Martínez">
+        <span>
+          Politécnico Olga Modesta Martínez
+          <small>La visión del futuro</small>
+        </span>
+      </a>
+
+      <button class="menu-toggle" id="menuToggle" type="button" aria-expanded="false" aria-controls="navPanel" aria-label="Abrir menú de navegación">
+        <i class='bx bx-grid-alt'></i>
+      </button>
+
+      <div class="nav-panel" id="navPanel">
+        <a class="nav-link" href="index.html"><i class='bx bx-home-alt-2'></i>Inicio</a>
+        <a class="nav-link" href="Historia.html"><i class='bx bx-building-house'></i>Sobre</a>
+        <a class="nav-link" href="Carreras.html"><i class='bx bx-briefcase-alt-2'></i>Oferta</a>
+        <a class="nav-link" href="Eventos.html"><i class='bx bx-news'></i>Noticias</a>
+        <a class="nav-link" href="Galeria.html"><i class='bx bx-image-alt'></i>Galería</a>
+        <a class="nav-link" href="contacto.html"><i class='bx bx-phone-call'></i>Contacto</a>
+        <a class="nav-link" href="desarrolladores.html"><i class='bx bx-code-alt'></i>Devs</a>
+        <button class="theme-toggle" id="themeToggle" type="button" aria-label="Activar modo oscuro">
+          <i class='bx bx-moon'></i>
+        </button>
+      </div>
+    </nav>
+  </header>
+
+  <main id="contenido">
+    <section class="hero section">
+      <div class="container hero-grid">
+        <article class="hero-copy reveal">
+          <p class="eyebrow"><i class='bx bx-calendar-star'></i> Noticias y agenda</p>
+          <h1>La vida institucional <span>siempre está en movimiento.</span></h1>
+          <p>
+            Conoce actividades académicas, efemérides, jornadas especiales y eventos que
+            fortalecen la cultura del politécnico y la participación estudiantil.
+          </p>
+          <div class="pill-row">
+            <span class="pill"><i class='bx bx-bullhorn'></i> Actualidad</span>
+            <span class="pill"><i class='bx bx-group'></i> Comunidad</span>
+            <span class="pill"><i class='bx bx-trophy'></i> Logros</span>
+          </div>
+        </article>
+
+        <aside class="hero-media reveal">
+          <img src="images/Eventos.jpg" alt="Actividades y eventos del politécnico" class="hero-photo">
+          <div class="hero-badge">
+            <i class='bx bx-calendar-check'></i>
+            <div>
+              <strong>Calendario institucional activo</strong>
+              <span>Eventos formativos, culturales y cívicos durante todo el año.</span>
+            </div>
+          </div>
+        </aside>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <header class="section-head reveal">
+          <p class="section-kicker">Destacados 2026</p>
+          <h2>Principales eventos del periodo académico.</h2>
+          <p>Actividades que impulsan el liderazgo estudiantil, innovación y pertenencia institucional.</p>
+        </header>
+
+        <div class="card-grid triple">
+          <article class="surface-card news-card reveal" data-delay="0.08s">
+            <span class="news-date"><i class='bx bx-calendar'></i> 26 enero 2026</span>
+            <h3>Natalicio de Juan Pablo Duarte</h3>
+            <p>Es una fecha dedicada a honrar su lucha por la independencia, sus ideales de libertad y su legado en la formación de la República Dominicana.</p>
+            <a class="card-link" href="Galeria.html">Ver galería <i class='bx bx-right-arrow-alt'></i></a>
+          </article>
+         
+          <article class="surface-card news-card reveal" data-delay="0.16s">
+            <span class="news-date"><i class='bx bx-calendar'></i> 10 Febrero 2026</span>
+            <h3>Día Nacional del Folklore</h3>
+            <p>Se celebra para resaltar las tradiciones, costumbres, música y danzas que forman parte de la identidad cultural del país.</p>
+            <a class="card-link" href="Galeria.html">Ver galería <i class='bx bx-right-arrow-alt'></i></a>
+          </article>
+
+           <article class="surface-card news-card reveal" data-delay="0.24s">
+            <span class="news-date"><i class='bx bx-calendar'></i> 18 Febrero 2026</span>
+            <h3>Día Nacional del estudiante</h3>
+            <p>El Día Nacional del Estudiante se celebra  en honor al esfuerzo, la dedicación y el compromiso de los estudiantes en su formación académica. </p>
+            <a class="card-link" href="Galeria.html">Ver galería <i class='bx bx-right-arrow-alt'></i></a>
+          </article>
+        </div>
+      </div>
+
+<div class="card-grid triple">
+          <article class="surface-card news-card reveal" data-delay="0.32s">
+            <span class="news-date"><i class='bx bx-calendar'></i> 27 Febrero 2026</span>
+            <h3>Día de la Independencia Nacional</h3>
+            <p>Se celebra para conmemorar la proclamación de la soberanía en 1844. Es una fecha que honra la lucha por la libertad y el legado de los padres de la patria.</p>
+            <a class="card-link" href="Galeria.html">Ver galería <i class='bx bx-right-arrow-alt'></i></a>
+          </article>
+          <article class="surface-card news-card reveal" data-delay="0.40s">
+            <span class="news-date"><i class='bx bx-calendar'></i> 08 marzo 2026</span>
+            <h3>Día Internacional de la Mujer</h3>
+            <p>Reconoce la lucha por la igualdad de derechos y el empoderamiento de las mujeres en todo el mundo.</p>
+            <a class="card-link" href="Galeria.html">Ver galería <i class='bx bx-right-arrow-alt'></i></a>
+          </article>
+          <article class="surface-card news-card reveal" data-delay="0.48s">
+            <span class="news-date"><i class='bx bx-calendar'></i> 19 marzo 2026</span>
+            <h3>Batalla del 19 de Marzo</h3>
+            <p>Conmemora la victoria dominicana en la Batalla del 19 de Marzo, un hecho clave en la defensa de la independencia nacional.</p>
+            <a class="card-link" href="Galeria.html">Ver galería <i class='bx bx-right-arrow-alt'></i></a>
+          </article>
+        </div>
+      </div>
+
+<div class="card-grid triple">
+          <article class="surface-card news-card reveal" data-delay="0.56s">
+            <span class="news-date"><i class='bx bx-calendar'></i> 30 Marzo 2026</span>
+            <h3>Batalla del 30 de Marzo</h3>
+            <p>Recuerda la victoria dominicana en la Batalla del 30 de Marzo, consolidando la independencia frente a fuerzas extranjeras.</p>
+            <a class="card-link" href="Galeria.html">Ver galería <i class='bx bx-right-arrow-alt'></i></a>
+          </article>
+          <article class="surface-card news-card reveal" data-delay="0.62s">
+            <span class="news-date"><i class='bx bx-calendar'></i> 10 Abril 2026</span>
+            <h3>5ta Feria de Emprendimiento</h3>
+            <p>Es un evento que promueve la creatividad, la innovación y el espíritu empresarial de los estudiantes, brindando un espacio para presentar ideas de negocio, proyectos y productos que aportan al desarrollo económico y social.
+            </p>
+            <a class="card-link" href="Galeria.html">Ver galería <i class='bx bx-right-arrow-alt'></i></a>
+          </article>
+          
+        
+        </div>
+      </div>
+
+
+    <section class="section">
+      <div class="container">
+        <header class="section-head reveal">
+          <p class="section-kicker">Agenda anual</p>
+          <h2>Fechas institucionales de alto impacto educativo.</h2>
+        </header>
+
+        <div class="timeline-grid">
+          <article class="surface-card timeline-card reveal" data-year="Ene" data-delay="0.02s">
+            <h3>Mes de Duarte</h3>
+            <p>Dedicado a honrar el natalicio de Juan Pablo Duarte, resaltando sus ideales de libertad, patriotismo y su papel fundamental en la creación de la nación dominicana.</p>
+          </article>
+          <article class="surface-card timeline-card reveal" data-year="Feb" data-delay="0.07s">
+            <h3>Mes de la patria</h3>
+            <p>Conocido como el mes de la patria, celebra la independencia de la República Dominicana el 27 de febrero, destacando la lucha por la soberanía nacional.</p>
+          </article>
+          <article class="surface-card timeline-card reveal" data-year="Mar" data-delay="0.12s">
+            <h3>Mes de la Defensa de la Patria</h3>
+            <p>Mes que recuerda importantes victorias militares como la Batalla del 19 de Marzo y la Batalla del 30 de Marzo, fundamentales para la defensa de la independencia.</p>
+          </article>
+          <article class="surface-card timeline-card reveal" data-year="Jun" data-delay="0.17s">
+            <h3>Mes de la Restauración</h3>
+            <p>Destaca la Restauración de la República con la Guerra de la Restauración, reafirmando la libertad y la identidad nacional tras la anexión.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div>
+        <h3>Politécnico Olga Modesta Martínez</h3>
+        <p>Una comunidad académica activa, dinámica y comprometida con la excelencia.</p>
+      </div>
+
+      <div>
+        <h4>Pestañas</h4>
+        <a href="index.html">Inicio</a>
+        <a href="Historia.html">Sobre</a>
+        <a href="Carreras.html">Oferta académica</a>
+        <a href="Galeria.html">Galería</a>
+      </div>
+
+      <div>
+        <h4>Institucional</h4>
+        <a href="contacto.html">Contacto</a>
+        <a href="desarrolladores.html">Desarrolladores</a>
+        <a href="Politica de privacidad.html">Política de privacidad</a>
+        <a href="Politica de cookies.html">Política de cookies</a>
+        <a href="Terminos de seguridad.html">Términos de seguridad</a>
+      </div>
+
+      <div>
+        <h4>Redes</h4>
+        <div class="social-links">
+          <a href="#" aria-label="Facebook"><i class='bx bxl-facebook-circle'></i></a>
+          <a href="https://www.instagram.com/politecnicoolgamodesta?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" aria-label="Instagram"><i class='bx bxl-instagram-alt'></i></a>
+        </div>
+      </div>
+    </div>
+
+    <div class="container footer-bottom">
+      <p>© <span data-current-year></span> Politécnico Olga Modesta Martínez. Todos los derechos reservados.</p>
+      <p>Diseño premium por PanicOS.</p>
+    </div>
+  </footer>
+
+  <a href="#contenido" class="scroll-top" id="scrollTop" aria-label="Volver arriba">
+    <i class='bx bx-chevron-up'></i>
+  </a>
+
+  <script src="main.js" defer></script>
+</body>
+</html>
+
+

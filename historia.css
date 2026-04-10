@@ -1,0 +1,94 @@
+/*========== HISTORIA - NUEVO DISEÑO COMPLETO ==========*/
+
+body{
+  margin: 0;
+  padding-top: 90px;
+  font-family: 'Poppins', sans-serif;
+  background-color: #f9fafb;
+}
+
+/* CONTENEDOR PRINCIPAL */
+.historia-container{
+  max-width: 1000px;
+  margin: auto;
+  padding: 2rem 1.5rem 4rem;
+}
+
+/* TÍTULO */
+.historia-titulo{
+  text-align: center;
+  font-size: 2.2rem;
+  color: #0a6c8e;
+  margin-bottom: 1rem;
+  font-weight: 700;
+}
+
+/* SUBTÍTULO */
+.historia-subtitulo{
+  text-align: center;
+  color: #555;
+  margin-bottom: 2.5rem;
+}
+
+/* IMAGEN SUPERIOR */
+.historia-img-container{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 2.5rem;
+}
+
+.historia-img-container img{
+  width: 100%;
+  max-width: 750px;
+  border-radius: 12px;
+  box-shadow: 0 8px 25px rgba(0,0,0,0.08);
+}
+
+/* TEXTO HISTORIA */
+.historia-texto{
+  text-align: justify;
+  line-height: 1.8;
+  color: #333;
+  font-size: 1rem;
+}
+
+/* PÁRRAFOS */
+.historia-texto p{
+  margin-bottom: 1.5rem;
+}
+
+/* SECCIÓN CRONOLÓGICA */
+.historia-linea-tiempo{
+  margin-top: 3rem;
+  padding-left: 1rem;
+  border-left: 4px solid #0a6c8e;
+}
+
+.historia-evento{
+  margin-bottom: 2rem;
+  padding-left: 1rem;
+}
+
+.historia-evento h3{
+  margin-bottom: .5rem;
+  color: #0a6c8e;
+  font-size: 1.2rem;
+}
+
+.historia-evento p{
+  margin: 0;
+  text-align: justify;
+  color: #444;
+}
+
+/* RESPONSIVE */
+@media screen and (max-width: 768px){
+  .historia-titulo{
+    font-size: 1.7rem;
+  }
+
+  .historia-texto{
+    font-size: 0.95rem;
+  }
+}
